@@ -1,17 +1,14 @@
 // Configuration Firebase pour Yellow Dot
 // Remplacez ces valeurs par votre configuration Firebase Realtime Database
-export const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_AUTH_DOMAIN",
-    databaseURL: "YOUR_DATABASE_URL",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_STORAGE_BUCKET",
-    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-    appId: "YOUR_APP_ID"
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCZwPWMmN1I5hdVYQEkj_PtUCaHYJTdptQ",
+  authDomain: "yellowdotchampiona.firebaseapp.com",
+  databaseURL: "https://yellowdotchampiona-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "yellowdotchampiona",
+  storageBucket: "yellowdotchampiona.firebasestorage.app",
+  messagingSenderId: "149651594411",
+  appId: "1:149651594411:web:09a21c1484ac3cb767ebee",
+  measurementId: "G-CM4BWNR1SY"
 };
 
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-import { getDatabase } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
-
-const app = initializeApp(firebaseConfig);
-export const db = getDatabase(app);
