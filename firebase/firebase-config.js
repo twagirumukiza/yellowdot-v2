@@ -11,4 +11,9 @@ const firebaseConfig = {
   appId: "1:149651594411:web:09a21c1484ac3cb767ebee",
   measurementId: "G-CM4BWNR1SY"
 };
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+import { getDatabase } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+
+const app = initializeApp(firebaseConfig);
+export const db = getDatabase(app);
 
